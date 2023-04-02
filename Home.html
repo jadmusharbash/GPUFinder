@@ -16,35 +16,67 @@
 <p>This site will include specific information about each GPu, to make sure you know which one best fits you!</p>
 <p>Did you know that the first GPU (GeForce 256) was made in 1999 by NIVIDIA?</p>
 <br>
-<img src="VisionTek_GeForce_256.jpg" alt="Geforce 256">
-
-<p> Links to each GPU!</p>
+<a href="https://en.wikipedia.org/wiki/GeForce_256#:~:text=GeForce%20256%20was%20marketed%20as,10%20million%20polygons%20per%20second%22."><img src="VisionTek_GeForce_256.jpg" class="GPU"></a>
+<br>
+<br>
+<p class="border1">Links to each GPU!</p> 
+<style>
+p.border1 {
+  border:5px solid red;
+  border-radius: 5px;
+  width: 100px;
+}
+</style> 
 <br>
 <!-- from w3schools.com along with some changes made by me-->
-<button class="accordion">Section 1</button>
-<div class="panel">
-  <a href="Page 1.html">Nvidia GeForce RTX 4070 Ti</a>  
-</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-header">Nvidia GeForce RTX 4070 Ti</div>
+    <div class="accordion-content">
+      <p><a href="Page 1.html">Learn more about Nvidia GeForce RTX 4070 Ti</a></p>
+    </div>
+  </div>
 
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <a href="Page 2.html">AMD Radeon RX 7900 XTX</a>
-</div>
+  <div class="accordion-item">
+    <div class="accordion-header">AMD Radeon RX 7900 XTX</div>
+    <div class="accordion-content">
+      <p><a href="Page 2.html">Learn more about AMD Radeon RX 7900 XTX</a></p>
+    </div>
+  </div>
 
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <a href="Page 3.html">Nvidia GeForce RTX 3060 Ti</a>
-</div>
+  <div class="accordion-item">
+    <div class="accordion-header">Nvidia GeForce RTX 3060 Ti</div>
+    <div class="accordion-content">
+      <p><a href="Page 3.html">Learn more about Nvidia GeForce RTX 3060 Ti</a></p>
+    </div>
+  </div>
 
-<button class="accordion">Section 4</button>
-<div class="panel">
-  <a href="Page 4.html">Nvidia GeForce RTX 3050</a>
-</div>
+  <div class="accordion-item">
+    <div class="accordion-header">Nvidia GeForce RTX 3050</div>
+    <div class="accordion-content">
+      <p><a href="Page 4.html">Learn more about Nvidia GeForce RTX 3050</a></p>
+    </div>
+  </div>
 
-<button class="accordion">Section 5</button>
-<div class="panel">
-  <a href="Page 5.html">Nvidia GeForce RTX 4090</a>
+  <div class="accordion-item">
+    <div class="accordion-header">Nvidia GeForce RTX 4090</div>
+    <div class="accordion-content">
+      <p><a href="Page 5.html">Learn more about Nvidia GeForce RTX 4090</a></p>
+    </div>
+  </div>
 </div>
+<!--Script made via chatgpt-->
+<script>
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const accordionItem = header.parentNode;
+      accordionItem.classList.toggle('active');
+    });
+  });
+</script>
+
 
 <style>
 body {

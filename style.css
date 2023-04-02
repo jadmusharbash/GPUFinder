@@ -1,16 +1,72 @@
 
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+body {
+  background-color: lightblue;
+}
+
+.GPU {
+  width:30%;
+}
+
+.GPU1 {
+  width:30%;
+}
+
+.GPU2 {
+  width:30%;
+}
+
+.GPU3 {
+  width:30%;
+}
+
+.GPU4 {
+  width:30%;
+}
+
+.GPU5 {
+  width:30%;
+}
+
+p {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:medium;
+}
+
+/* CSS accordion elements made with chatgpt */
+
+  .active, .accordion:hover { 
+    background-color: #ccc;
   }
 
-  .active, .accordion:hover {
-    background-color: #ccc;
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    width:500px
+  }
+  
+  .accordion-item {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    background-color: #ddd;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    display: none;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+  
+  p.border1 {
+    border:5px solid red;
+    border-radius: 5px;
+    width: 100px;
   }
