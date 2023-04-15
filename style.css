@@ -70,3 +70,11 @@ p {
     border-radius: 5px;
     width: 100px;
   }
+
+  p.list1 {
+    text-align: right;
+  }
+  
+  #list1 {
+    text-align:right
+  } 
