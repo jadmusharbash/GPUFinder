@@ -5,17 +5,57 @@
 <style>
   .GPU1 {
   width:30%;
+        width:30%;
+        transition: transform 0.5s ease-out;
 }
+
+.GPU1:hover {
+  transform: scale(1.1);
+    }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #ddd;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+
 </style>
+<!-- bootstrap element -->
+<div class="pagination"> <!--pagination made via bootstrap along with some changes made by me.-->
+<a href="Home.html">Home</a> <!-- internal link -->
+<a href="Page 1.html">4070Ti</a>
+<a href="Page 2.html">RX 7900 XTX</a>
+<a href="Page 3.html">3060Ti</a>
+<a href="Page 4.html">3050</a>
+<a href="Page 5.html">4090</a>
+</div>
   </head>
 <h2>
-RTX 4070 Ti
+RTX 4070 Ti (799$)
 </h2>
 
 <img src="TUF_Gaming_GeForce_RTX_4070_Ti_5.jpg" class="GPU1">
 
 <body>  
-    <table style="width:50%; z-index:1;" border="1">
+    <table style="width:30%; z-index:1;" border="1">
         <tr>
           <th>Stream Processors</th>
           <td>7,680</td>
@@ -41,16 +81,39 @@ RTX 4070 Ti
           <td>1x 16-pin</td>
         </tr>
       </table>
-      <style>
+      <!-- select by tag/element -->
+      <style> 
         body {
           background-color:lightblue
         }
         
+
+        .vid1 {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.paragraph1{
+  position: absolute;
+  bottom:5%;
+  right: 0;
+  left: 50%;
+  transform: translate(0,-50%);
+  width:32%;
+  border:5px solid red;
+  border-radius: 10px;
+}
+
         </style>
 
 <!-- concept from w3schools.com-->
 
-<iframe width="400" height="300" src="https://www.youtube.com/embed/hK-s1R63p1w2fc"></iframe>
+<iframe width="500" height="350" src="https://www.youtube.com/embed/tG8qwGooOlk" class="vid1"></iframe> <!-- external link -->
+<br>
+<p class="paragraph1">A superb graphics card, the Nvidia GeForce RTX 4070 Ti offers amazing performance in both gaming and business applications. Its robust architecture enables fluid gameplay and quick rendering. The 4070 Ti is a good pick for both gamers and producers because of its cutting-edge capabilities like ray tracing and DLSS.</p>
 
 
 
@@ -65,8 +128,5 @@ RTX 4070 Ti
 
 
 
-
-
-<a href="Page 2.html">Next Page</a>
 </body>
 </html>

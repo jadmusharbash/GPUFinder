@@ -4,17 +4,59 @@
 
   <link rel="stylesheet" href="style.css">
   <style>
-  .GPU3 {
-  width:30%;
-}
+    .GPU3 {
+    width:30%;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .GPU3:hover {
+  transform: scale(1.1);
+    }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination a {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #ddd;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .current-page {
+    background-color: #555;
+    color: #fff;
+  }
   </style>
+  
+  <div class="pagination"> 
+    <a href="Home.html">Home</a>
+  <a href="Page 1.html">4070Ti</a>
+  <a href="Page 2.html">RX 7900 XTX</a>
+  <a href="Page 3.html">3060Ti</a>
+  <a href="Page 4.html">3050</a>
+  <a href="Page 5.html">4090</a>
+  </div>
 </head>
 <h2>
-Nvidia GeForce RTX 3060 Ti
+Nvidia GeForce RTX 3060 Ti (399$)
 </h2>
 <img src="3060.jpg" class="GPU3">
 <body>
-    <table style="width:50%; z-index:1;" border="1">
+    <table style="width:30%; z-index:1;" border="1">
         <tr>
           <th>Stream Processors</th>
           <td>4,864</td>
@@ -46,14 +88,30 @@ Nvidia GeForce RTX 3060 Ti
           background-color:lightblue
         }
         
+        .vid3 {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.paragraph3{
+  position: absolute;
+  bottom:5%;
+  right: 0;
+  left: 50%;
+  transform: translate(0,-50%);
+  width:32%;
+  border:5px solid red;
+  border-radius: 10px;
+}
+
         </style>
 
-<iframe width="400" height="300" src="https://www.youtube.com/embed/HQ-VTo4x4kw"></iframe>
-
-
-
-
-
-<a href="Page 4.html">Next Page</a>
+<iframe width="500" height="350" src="https://www.youtube.com/embed/HQ-VTo4x4kw" class="vid3"></iframe>
+<br>
+<p class="paragraph3">At its pricing point, the NVIDIA GeForce RTX 3060 Ti is a superb mid-range graphics card that delivers remarkable performance. It can easily handle even the most demanding games and programs thanks to its 8GB of GDDR6 memory and ray tracing capability. Additionally, it is a great option for money-conscious gamers who want to build a high-performance system without breaking the bank due to its power efficiency and very low power usage.
+</p>
 </body>
 </html>

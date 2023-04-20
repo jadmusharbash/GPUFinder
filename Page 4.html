@@ -4,17 +4,59 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
-  .GPU4 {
-  width:30%;
-}
+      .GPU4 {
+      width:30%;
+      transition: transform 0.5s ease-out;
+    }
+
+    .GPU4:hover {
+  transform: scale(1.1);
+    }
+    
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .pagination a {
+      display: block;
+      padding: 10px;
+      margin: 5px;
+      background-color: #ddd;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      border-radius: 5px;
+    }
+    
+    .pagination a:hover {
+      background-color: #555;
+      color: #fff;
+    }
+    
+    .current-page {
+      background-color: #555;
+      color: #fff;
+    }
     </style>
+    
+    <div class="pagination"> 
+      <a href="Home.html">Home</a>
+    <a href="Page 1.html">4070Ti</a>
+    <a href="Page 2.html">RX 7900 XTX</a>
+    <a href="Page 3.html">3060Ti</a>
+    <a href="Page 4.html">3050</a>
+    <a href="Page 5.html">4090</a>
+    </div>
   </head>
 <h2>
-Nvidia GeForce RTX 3050
+Nvidia GeForce RTX 3050 (249$)
 </h2>
 <img src="3050.jpg" class="GPU4">
 <body>
-    <table style="width:50%; z-index:1;" border="1">
+    <table style="width:30%; z-index:1;" border="1">
         <tr>
           <th>Stream Processors</th>
           <td>2,560</td>
@@ -46,13 +88,31 @@ Nvidia GeForce RTX 3050
         background-color:lightblue
       }
       
+      .vid4 {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.paragraph4{
+  position: absolute;
+  bottom:5%;
+  right: 0;
+  left: 50%;
+  transform: translate(0,-50%);
+  width:32%;
+  border:5px solid red;
+  border-radius: 10px;
+}
+
       </style>
 
-<iframe width="400" height="300" src="https://www.youtube.com/embed/NKKBCC_QwCY"></iframe>
+<iframe width="500" height="350" src="https://www.youtube.com/embed/NKKBCC_QwCY" class="vid4"></iframe>
+<br>
+<p class="paragraph4">The 3050 is a cost-effective graphics card that offers great value for the money. It's excellent for beginning players or those on a tight budget who want to have a good gaming experience without going overboard. It may not have the power of more powerful cards, but it's still a good alternative for those on a tighter budget.
+</p>
 
-
-
-
-<a href="Page 5.html">Next Page</a>
 </body>
 </html>

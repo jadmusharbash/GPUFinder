@@ -1,27 +1,37 @@
-position ting on all pages, add text then A tings (dont forget citations) then done.
+citations then done.
 <!DOCTYPE html>
 <html>
 <head>
   <style>
     .GPU {
         width:30%;
+        width: 300px;
+        height: 200px;
+        transition: transform 0.5s ease-out;
+       }
+.GPU:hover {
+  transform: scale(1.1);
     }
 </style>
 <link rel="stylesheet" href="style.css">
+
+
+
  <title>GPU Finder</title>
 <h1 style="color:red;">Welcome to the GPUFinder!</h1>
 <br>
 <h2>The following pages will be about the top 5 GPU's that you can buy.</h1>
 </head>
 <body>
-<p>This site will include specific information about each GPu, to make sure you know which one best fits you!</p>
+<p>This site includes specific information about each GPU, to make sure you know which one best fits you!</p>
 <p>Did you know that the first GPU (GeForce 256) was made in 1999 by NIVIDIA?</p>
 <br>
-<a href="https://en.wikipedia.org/wiki/GeForce_256#:~:text=GeForce%20256%20was%20marketed%20as,10%20million%20polygons%20per%20second%22."><img src="VisionTek_GeForce_256.jpg" class="GPU"></a>
+<a href="https://en.wikipedia.org/wiki/GeForce_256#:~:text=GeForce%20256%20was%20marketed%20as,10%20million%20polygons%20per%20second%22."><img src="VisionTek_GeForce_256.jpg" class="GPU"></a> <!-- image as link -->
 <br>
 <br>
 <p class="border1">Links to each GPU!</p> 
-<style>
+<!-- box model -->
+<style> 
 p.border1 {
   border:5px solid red;
   border-radius: 5px;
@@ -30,7 +40,7 @@ p.border1 {
 </style> 
 <br>
 <!-- from w3schools.com along with some changes made by me-->
-<div class="accordion">
+<div class="accordion"> <!-- div -->
   <div class="accordion-item">
     <div class="accordion-header">Nvidia GeForce RTX 4070 Ti</div>
     <div class="accordion-content">
@@ -82,18 +92,32 @@ body {
   background-color: lightblue;
 }
 </style>
-<p class="List1">Here are some fun facts about the Geforce 256.</p>
+<p class="List1">Here are some fun facts about the Geforce 256.</p> 
+<!-- positioning -->
 <style>
 p.List1 {
-  text-align:right
+  position: absolute; 
+  bottom:55%;
+  right: 0;
+  left: 57%;
+  transform: translateY(-50%); /*translateY idea from w3schools.com*/
+  margin:10px
 } 
 #list1 {
-  text-align:right
+  position: absolute;
+  bottom:0%;
+  right: 0;
+  left: 55%;
+  transform: translate(0,-50%);
+  width:30%;
+  border:5px solid red;
+  border-radius: 10px;
+  height: 7cm;
 } 
 </style>
 
 </style>
-<ul id ="list1">
+<ul id ="list1"> <!-- select by ID -->
 <li>The first model in Nvidia's "GeForce" product series was the GeForce 256.</li>
 <li>It was the first completely Direct3D 7-compliant 3D accelerator and provided a noticeably significant improvement in 3D PC gaming performance.</li>
 <li>TSMC produced the chip using its 220 nm CMOS technology.</li>

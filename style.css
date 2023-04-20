@@ -71,10 +71,139 @@ p {
     width: 100px;
   }
 
-  p.list1 {
-    text-align: right;
-  }
-  
-  #list1 {
-    text-align:right
+  p.List1 {
+    position: absolute; 
+    bottom:3%;
+    right: 0;
+    left: 57%;
+    transform: translateY(-50%) /*translateY idea from w3schools.com*/
   } 
+  #list1 {
+    position: absolute;
+    bottom:25%;
+    right: 0;
+    left: 55%;
+    transform: translate(0,-50%);
+    width:30%;
+    border:5px solid red;
+    border-radius: 10px;
+    height: 7cm;
+  } 
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .pagination a {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #ddd;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+  }
+
+  .pagination a:hover {
+    background-color: #555;
+    color: #fff;
+  }
+
+  .vid1 {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+  .vid2 {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+  .vid3 {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+  .vid4 {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+  .vid5 {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+  .paragraph1{
+    position: absolute;
+    bottom:5%;
+    right: 0;
+    left: 50%;
+    transform: translate(0,-50%);
+    width:32%;
+    border:5px solid red;
+    border-radius: 10px;
+  }
+
+  .paragraph2{
+    position: absolute;
+    bottom:5%;
+    right: 0;
+    left: 50%;
+    transform: translate(0,-50%);
+    width:32%;
+    border:5px solid red;
+    border-radius: 10px;
+  }
+
+  .paragraph3{
+    position: absolute;
+    bottom:5%;
+    right: 0;
+    left: 50%;
+    transform: translate(0,-50%);
+    width:32%;
+    border:5px solid red;
+    border-radius: 10px;
+  }
+
+  .paragraph4{
+    position: absolute;
+    bottom:5%;
+    right: 0;
+    left: 50%;
+    transform: translate(0,-50%);
+    width:32%;
+    border:5px solid red;
+    border-radius: 10px;
+  }
+
+  .paragraph5{
+    position: absolute;
+    bottom:5%;
+    right: 0;
+    left: 50%;
+    transform: translate(0,-50%);
+    width:32%;
+    border:5px solid red;
+    border-radius: 10px;
+  }

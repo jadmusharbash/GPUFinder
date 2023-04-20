@@ -6,15 +6,58 @@
     <style>
   .GPU2 {
   width:30%;
+  transition: transform 0.5s ease-out;
 }
-    </style>
+
+.GPU2:hover {
+  transform: scale(1.1);
+    }
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #ddd;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.current-page {
+  background-color: #555;
+  color: #fff;
+}
+</style>
+
+<div class="pagination"> 
+  <a href="Home.html">Home</a>
+<a href="Page 1.html">4070Ti</a>
+<a href="Page 2.html">RX 7900 XTX</a>
+<a href="Page 3.html">3060Ti</a>
+<a href="Page 4.html">3050</a>
+<a href="Page 5.html">4090</a>
+</div>
   </head>
 <h2>
- AMD Radeon RX 7900 XTX
+ AMD Radeon RX 7900 XTX (800$+)
 </h2>
 <img src="AMD-Radeon-RX-7900-XTX-Graphics-Card-Official.png" class="GPU2">
 <body>
-    <table style="width:50%; z-index:1;" border="1">
+    <table style="width:30%; z-index:1;" border="1">
         <tr>
           <th>Stream Processors</th>
           <td>4,864</td>
@@ -40,15 +83,38 @@
           <td>2x PCIe 8-pin</td>
         </tr>
       </table>
-
+<!-- inline CSS -->
       <style>
         body {
           background-color:lightblue
         }
         
+        .vid2 {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.paragraph2{
+  position: absolute;
+  bottom:5%;
+  right: 0;
+  left: 50%;
+  transform: translate(0,-50%);
+  width:32%;
+  border:5px solid red;
+  border-radius: 10px;
+}
+
         </style>
 
-<iframe width="400" height="300" src="https://www.youtube.com/embed/3uQh4GkPopQ"></iframe>
+<iframe width="500" height="350" src="https://www.youtube.com/embed/3uQh4GkPopQ" class="vid2"></iframe>
+<br>
+<!-- select by class -->
+<p class="paragraph2">An incredible beast of a graphics card, the RX 7900 XTX offers unmatched performance for demanding applications like gaming. It is a powerhouse that can take on anything thanks to its cutting-edge architecture and premium components. You're also guaranteed to enjoy a fantastic gaming experience with to features like real-time ray tracing, compatibility for 4K, and VR. The RX 7900 XTX is the only graphics card you need if you want the best technology available.
+</p>
 
 
 
@@ -67,8 +133,5 @@
 
 
 
-
-
-<a href="Page 3.html">Next Page</a>
 </body>
 </html>

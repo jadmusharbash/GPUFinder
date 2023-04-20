@@ -1,1 +1,3 @@
 # GPUFinder
+# My Reflection
+### In my website, I had the most trouble with the pagination system, as it required not only animation, but many links to every page in my website. The intention of this feature is to access the site easier, so clicking the arrow multiple times shouldn't be a worry. Despite my struggles, I succeeded by checking for missing commas, semi-colons and other small details which could have ruined my code; after checking multiple times, I had resolved this issue.

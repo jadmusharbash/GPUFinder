@@ -4,17 +4,59 @@
 
   <link rel="stylesheet" href="style.css">
   <style>
-  .GPU5 {
-  width:30%;
-}
+    .GPU5 {
+    width:30%;
+    transition: transform 0.5s ease-out;
+  }
+
+  .GPU5:hover {
+  transform: scale(1.1);
+    }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination a {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #ddd;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .current-page {
+    background-color: #555;
+    color: #fff;
+  }
   </style>
+  
+  <div class="pagination"> 
+    <a href="Home.html">Home</a>
+  <a href="Page 1.html">4070Ti</a>
+  <a href="Page 2.html">RX 7900 XTX</a>
+  <a href="Page 3.html">3060Ti</a>
+  <a href="Page 4.html">3050</a>
+  <a href="Page 5.html">4090</a>
+  </div>
 </head>
 <h2>
-Nvidia GeForce RTX 4090
+Nvidia GeForce RTX 4090 (1599$)
 </h2>
 <img src="4090hero.jpg" class="GPU5">
 <body>
-    <table style="width:50%; z-index:1;" border="1">
+    <table style="width:30%; z-index:1;" border="1">
         <tr>
           <th>Stream Processors</th>
           <td>16,384</td>
@@ -46,10 +88,33 @@ Nvidia GeForce RTX 4090
         body {
           background-color:lightblue
         }
+
+        .vid5 {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.paragraph5{
+  position: absolute;
+  bottom:1%;
+  right: 0;
+  left: 50%;
+  transform: translate(0,-50%);
+  width:32%;
+  border:5px solid red;
+  border-radius: 10px;
+}
+
         
         </style>
 
-<iframe width="400" height="300" src="https://www.youtube.com/embed/6TWEDD7yP7A"></iframe>
+<iframe width="500" height="350" src="https://www.youtube.com/embed/6TWEDD7yP7A" class="vid5"></iframe>
+<br>
+<p class="paragraph5">The 4090 is a GPU that is unmatched in strength. It is a strong challenger for the most demanding gaming and creative applications because to its cutting-edge architecture and top-notch specifications. For dedicated gamers and professionals who want the finest, its cutting-edge cooling technology and great performance make it a reality. The 4090 is unquestionably a model worth taking into consideration if you're searching for the pinnacle of gaming and computing.
+</p>
 
 
 
@@ -60,9 +125,5 @@ Nvidia GeForce RTX 4090
 
 
 
-
-
-
-<a href="Home.html">Home</a>
 </body>
 </html>
