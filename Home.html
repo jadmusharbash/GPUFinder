@@ -1,43 +1,140 @@
-citations then done.
+
 <!DOCTYPE html>
-<html>
-<head>
-  <style>
-    .GPU {
+<html lang="en">
+<head><!-- transform part of style from w3schools.com-->
+  <meta charset="UTF-8">
+  <style> 
+    .card-image {
         width:30%;
         width: 300px;
         height: 200px;
         transition: transform 0.5s ease-out;
        }
-.GPU:hover {
+.card-image:hover { 
   transform: scale(1.1);
     }
 </style>
 <link rel="stylesheet" href="style.css">
-
-
-
- <title>GPU Finder</title>
-<h1 style="color:red;">Welcome to the GPUFinder!</h1>
-<br>
-<h2>The following pages will be about the top 5 GPU's that you can buy.</h1>
 </head>
+ 
 <body>
-<p>This site includes specific information about each GPU, to make sure you know which one best fits you!</p>
-<p>Did you know that the first GPU (GeForce 256) was made in 1999 by NIVIDIA?</p>
-<br>
-<a href="https://en.wikipedia.org/wiki/GeForce_256#:~:text=GeForce%20256%20was%20marketed%20as,10%20million%20polygons%20per%20second%22."><img src="VisionTek_GeForce_256.jpg" class="GPU"></a> <!-- image as link -->
-<br>
-<br>
-<p class="border1">Links to each GPU!</p> 
-<!-- box model -->
-<style> 
-p.border1 {
-  border:5px solid red;
-  border-radius: 5px;
-  width: 100px;
+  <header>
+    <h1 class="title">GPUFinder</h1>
+    <h2 class="subtitle">The top 5 GPUs you can buy</h2>
+  </header>
+  <main> 
+    <p class="content">Welcome to GPUFinder, the ultimate guide to finding the perfect GPU for your needs. Our site provides detailed information about the top 5 GPUs on the market, so you can make an informed decision when purchasing your next GPU.</p>
+    <p class="content">Did you know that the first GPU (GeForce 256) was made in 1999 by NVIDIA?</p>
+    <div class="card">
+      <img class="card-image" src="VisionTek_GeForce_256.jpg" alt="GPU image">  <!-- image as link -->
+      <div class="card">
+        <h3 id="card-title" >Geforce 256</h3> 
+        <ul id="card-list" style="list-style-type: disc;"> <!-- select by ID --> <!--Internal style-->
+          <li>The first model in Nvidia's "GeForce" product series was the GeForce 256.</li>
+          <li>It was the first completely Direct3D 7-compliant 3D accelerator and provided a noticeably significant improvement in 3D PC gaming performance.</li>
+          <li>TSMC produced the chip using its 220 nm CMOS technology.</li>
+        </ul>
+      </div>  
+      <a class="card-link" href="https://en.wikipedia.org/wiki/GeForce_256">Learn More</a>
+    </div>
+  </main>
+  <!-- box model in * style-->
+<!-- and positioning  in #card-content style -->
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-</style> 
+
+/* Body styles */
+body {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Header styles */
+header {
+  background-color: #0077be;
+  color: #fff;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+/* Main content styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+#card-content {
+  margin: 0 20px 20px;
+  position: absolute;
+  bottom:0%;
+  right: 0;
+  left: 55%;
+  transform: translate(0,-50%);
+  width:30%;
+  height: 7cm;
+}
+
+.card-link {
+  display: block;
+  background-color: #0077be;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out;
+}
+
+.card-link:hover {
+  background-color: #005f8c;
+}
+</style>
+<br>
+<br>
+
+
+
 <br>
 <!-- from w3schools.com along with some changes made by me-->
 <div class="accordion"> <!-- div -->
@@ -76,6 +173,43 @@ p.border1 {
     </div>
   </div>
 </div>
+<style>
+ .active, .accordion:hover { 
+    background-color: #0000FF;
+  }
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    width:500px;
+    position: absolute;
+    bottom: 60;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .accordion-item {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    background-color: #ddd;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    display: none;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+
+</style>
 <!--Script made via chatgpt-->
 <script>
   const accordionHeaders = document.querySelectorAll('.accordion-header');
@@ -92,37 +226,6 @@ body {
   background-color: lightblue;
 }
 </style>
-<p class="List1">Here are some fun facts about the Geforce 256.</p> 
-<!-- positioning -->
-<style>
-p.List1 {
-  position: absolute; 
-  bottom:55%;
-  right: 0;
-  left: 57%;
-  transform: translateY(-50%); /*translateY idea from w3schools.com*/
-  margin:10px
-} 
-#list1 {
-  position: absolute;
-  bottom:0%;
-  right: 0;
-  left: 55%;
-  transform: translate(0,-50%);
-  width:30%;
-  border:5px solid red;
-  border-radius: 10px;
-  height: 7cm;
-} 
-</style>
 
-</style>
-<ul id ="list1"> <!-- select by ID -->
-<li>The first model in Nvidia's "GeForce" product series was the GeForce 256.</li>
-<li>It was the first completely Direct3D 7-compliant 3D accelerator and provided a noticeably significant improvement in 3D PC gaming performance.</li>
-<li>TSMC produced the chip using its 220 nm CMOS technology.</li>
-<li>The GeForce 256 comes in two versions, each with a distinct kind of SDRAM memory: the SDR version, which was released in October 1999, and the DDR version, which was released in the middle of December 1999.</li>
-<li>The earlier DDR variant uses DDR SDRAM memory from SK Hynix, whereas the SDR version uses SDR SDRAM memory from Samsung Electronics.</li>
-</ul>
 </body>
 </html> 
