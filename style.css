@@ -94,28 +94,7 @@ p {
     height: 7cm;
   } 
 
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
 
-  .pagination a {
-    display: block;
-    padding: 10px;
-    margin: 5px;
-    background-color: #ddd;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    border-radius: 5px;
-  }
-
-  .pagination a:hover {
-    background-color: #555;
-    color: #fff;
-  }
 
   .vid1 {
     position: absolute;
@@ -298,4 +277,27 @@ p {
   
   .card-link:hover {
     background-color: #005f8c;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .pagination a {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #ddd;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+  }
+
+  .pagination a:hover {
+    background-color: #555;
+    color: #fff;
   }
